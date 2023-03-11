@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot UI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+    }
+
+    .chatbot-container {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+    }
+
+    .chatbot-response {
+      margin-top: 10px;
+      height: 300px;
+      overflow-y: scroll;
+      border: 1px solid #ccc;
+      padding: 10px;
+      font-size: 14px;
+	  
+    }
+
+    .chatbot-response p {
+      margin: 5px 0;
+    }
+	.chatbot-response p:nth-child(even) {
+		color: purple;
+	}
+
+    .input-container {
+      margin-top: 20px;
+      display: flex;
+    }
+
+    .input-container textarea {
+      flex: 1;
+      height: 40px;
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .input-container button {
+      height: 40px;
+      width: 80px;
+      margin-left: 10px;
+      font-size: 14px;
+      border-radius: 5px;
+      border: none;
+      background-color: #1e90ff;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .input-container button:hover {
+      background-color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <div class="chatbot-container">
+    <div class="chatbot-response" id="chatbot-response"></div>
+    <div class="input-container">
+      <textarea id="input-textarea" placeholder="Type your message here"></textarea>
+      <button id="send-button">Send</button>
+    </div>
+  </div>
+  <script src="chatbot.js"></script>
+</body>
+</html>
