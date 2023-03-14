@@ -4,6 +4,7 @@ const chatbotResponseDiv = document.getElementById('chatbot-response');
 const inputTextArea = document.getElementById('input-textarea');
 const sendButton = document.getElementById('send-button');
 
+
 sendButton.addEventListener('click', async () => {
   const inputText = inputTextArea.value.trim();
   if (inputText !== '') {
